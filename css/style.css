@@ -1,0 +1,612 @@
+/* ===========================
+   Google Font
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* ===========================
+   Root Variables
+=========================== */
+:root{
+    --bg:#0f172a;
+    --secondary:#111827;
+    --card:rgba(255,255,255,.08);
+    --glass:rgba(255,255,255,.08);
+
+    --primary:#00d4ff;
+    --primary2:#6c63ff;
+
+    --text:#ffffff;
+    --text2:#cbd5e1;
+
+    --border:rgba(255,255,255,.15);
+
+    --shadow:0 10px 30px rgba(0,0,0,.4);
+}
+
+/* ===========================
+   Reset
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+    background:linear-gradient(135deg,#0f172a,#111827,#1e293b);
+    color:var(--text);
+    overflow-x:hidden;
+
+}
+
+/* Particles */
+
+#particles-js{
+
+    position:fixed;
+    inset:0;
+    z-index:-2;
+
+}
+
+/* ===========================
+   Cursor
+=========================== */
+
+.cursor{
+
+    width:20px;
+    height:20px;
+
+    border:2px solid var(--primary);
+
+    border-radius:50%;
+
+    position:fixed;
+
+    pointer-events:none;
+
+    transform:translate(-50%,-50%);
+
+    z-index:9999;
+
+}
+
+/* ===========================
+   Header
+=========================== */
+
+.header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 10%;
+
+    background:rgba(15,23,42,.75);
+
+    backdrop-filter:blur(18px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+    z-index:999;
+
+}
+
+.logo{
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:var(--primary);
+
+}
+
+nav{
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+nav a{
+
+    color:white;
+
+    text-decoration:none;
+
+    font-weight:500;
+
+    transition:.3s;
+
+}
+
+nav a:hover{
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   Hero
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:120px 10%;
+
+}
+
+.hero-content{
+
+    max-width:850px;
+
+}
+
+.hero h1{
+
+    font-size:65px;
+
+    margin-bottom:20px;
+
+}
+
+.hero h1 span{
+
+    color:var(--primary);
+
+}
+
+.hero h2{
+
+    font-size:32px;
+
+    color:var(--text2);
+
+    margin-bottom:25px;
+
+}
+
+.hero p{
+
+    font-size:18px;
+
+    line-height:1.8;
+
+    color:var(--text2);
+
+    margin-bottom:40px;
+
+}
+
+/* ===========================
+   Buttons
+=========================== */
+
+.hero-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:20px;
+
+    flex-wrap:wrap;
+
+}
+
+.btn{
+
+    padding:15px 35px;
+
+    background:linear-gradient(45deg,var(--primary),var(--primary2));
+
+    color:white;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px);
+
+}
+
+.btn-outline{
+
+    padding:15px 35px;
+
+    border:2px solid var(--primary);
+
+    border-radius:40px;
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.4s;
+
+}
+
+.btn-outline:hover{
+
+    background:var(--primary);
+
+    color:#000;
+
+}
+
+/* ===========================
+   Sections
+=========================== */
+
+section{
+
+    padding:100px 10%;
+
+}
+
+.section-title{
+
+    text-align:center;
+
+    font-size:40px;
+
+    margin-bottom:60px;
+
+    color:var(--primary);
+
+}
+
+/* ===========================
+   About
+=========================== */
+
+.about-container{
+
+    display:grid;
+
+    grid-template-columns:1fr 2fr;
+
+    gap:60px;
+
+    align-items:center;
+
+}
+
+.about-image img{
+
+    width:100%;
+
+    border-radius:20px;
+
+    box-shadow:var(--shadow);
+
+}
+
+.about-text{
+
+    line-height:1.9;
+
+    font-size:18px;
+
+    color:var(--text2);
+
+}
+
+/* ===========================
+   Skills
+=========================== */
+
+.skills-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+
+    gap:25px;
+
+}
+
+.skill-card{
+
+    background:var(--glass);
+
+    backdrop-filter:blur(18px);
+
+    border:1px solid var(--border);
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+    font-weight:600;
+
+}
+
+.skill-card:hover{
+
+    transform:translateY(-10px);
+
+    background:linear-gradient(45deg,var(--primary),var(--primary2));
+
+}
+
+/* ===========================
+   Projects
+=========================== */
+
+.project-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.project-card{
+
+    background:var(--glass);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid var(--border);
+
+    border-radius:20px;
+
+    padding:30px;
+
+    transition:.4s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.project-card h3{
+
+    color:var(--primary);
+
+    margin-bottom:15px;
+
+}
+
+.project-card p{
+
+    color:var(--text2);
+
+    line-height:1.8;
+
+}
+
+.project-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:var(--primary);
+
+}
+
+/* ===========================
+   Contact
+=========================== */
+
+.contact-form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:20px;
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+.contact-form input,
+.contact-form textarea{
+
+    padding:18px;
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid var(--border);
+
+    color:white;
+
+    border-radius:12px;
+
+    outline:none;
+
+}
+
+.contact-form textarea{
+
+    resize:none;
+
+    min-height:180px;
+
+}
+
+.contact-form button{
+
+    background:linear-gradient(45deg,var(--primary),var(--primary2));
+
+    border:none;
+
+    padding:18px;
+
+    color:white;
+
+    font-size:17px;
+
+    border-radius:50px;
+
+    cursor:pointer;
+
+    transition:.4s;
+
+}
+
+.contact-form button:hover{
+
+    transform:scale(1.03);
+
+}
+
+.contact-links{
+
+    margin-top:50px;
+
+    text-align:center;
+
+    color:var(--text2);
+
+}
+
+.contact-links p{
+
+    margin:12px 0;
+
+}
+
+/* ===========================
+   Chatbot
+=========================== */
+
+.chatbot{
+
+    position:fixed;
+
+    bottom:25px;
+
+    right:25px;
+
+    z-index:999;
+
+}
+
+#chatBtn{
+
+    width:65px;
+
+    height:65px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:linear-gradient(45deg,var(--primary),var(--primary2));
+
+    color:white;
+
+    font-size:28px;
+
+    cursor:pointer;
+
+    box-shadow:var(--shadow);
+
+}
+
+.chat-window{
+
+    display:none;
+
+}
+
+/* ===========================
+   Footer
+=========================== */
+
+footer{
+
+    text-align:center;
+
+    padding:35px;
+
+    background:#0b1120;
+
+    color:#94a3b8;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+}
+
+/* ===========================
+   Scrollbar
+=========================== */
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#0f172a;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:10px;
+
+}
+
+/* ===========================
+   Selection
+=========================== */
+
+::selection{
+
+    background:var(--primary);
+
+    color:black;
+
+}
