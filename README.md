@@ -19,7 +19,6 @@ Production-ready, highly interactive **DevOps Engineer Portfolio** designed to h
   
 ---
 
-## 🏗️ Target CI/CD & Deployment Architecture
 ## 📌 About This Project
 
 This is my personal **DevOps Engineer Portfolio Website** built to showcase:
@@ -31,7 +30,7 @@ This is my personal **DevOps Engineer Portfolio Website** built to showcase:
 - Infrastructure as Code
 - Monitoring and automation skills
 
-Next.js → Git → GitHub → GitHub Actions → quality/security checks → Docker → deployment → monitoring → documentation
+```Next.js → Git → GitHub → GitHub Actions → quality/security checks → Docker → deployment → monitoring → documentation```
 
 ---
 
