@@ -1,11 +1,3 @@
-# 🚀 Amit - (DevOps Engineer) Portfolio
-
-![DevOps](https://img.shields.io/badge/Role-DevOps%20Engineer-00ff99)
-![Cloud](https://img.shields.io/badge/Cloud-AWS-orange)
-![Docker](https://img.shields.io/badge/Container-Docker-blue)
-![Kubernetes](https://img.shields.io/badge/Orchestration-Kubernetes-326ce5)
-![License](https://img.shields.io/badge/License-MIT-green)
-
 # 🚀 Amit K Pandey - (Cloud & DevOps Engineer) Portfolio
 
 ![DevOps](https://img.shields.io/badge/Role-DevOps%20%26%20Cloud%20Engineer-00d9ff?style=for-the-badge&logo=devops)
@@ -24,7 +16,7 @@ Production-ready, highly interactive **DevOps Engineer Portfolio** designed to h
 
 - **Live Site**: [amit5197.github.io/portfolio](https://amit5197.github.io/portfolio/)
 - **Repository**: [github.com/Amit5197/portfolio](https://github.com/Amit5197/portfolio)
-
+  
 ---
 
 ## 🏗️ Target CI/CD & Deployment Architecture
@@ -43,33 +35,33 @@ Next.js → Git → GitHub → GitHub Actions → quality/security checks → Do
 
 ---
 
- ### 🏗️ Target Architecture
+## 🏗️ Target CI/CD & Deployment Architecture
 
-                    ┌──────────────────────┐
-                    │       GitHub         │
-                    │   Source Repository  │
-                    └──────────┬───────────┘
-                               │
-                               │ git push
-                               ▼
-                    ┌──────────────────────┐
-                    │    GitHub Actions    │
-                    │                      │
-                    │  1. Lint             │
-                    │  2. Test             │
-                    │  3. Build            │
-                    │  4. Security Scan    │
-                    │  5. Docker Build     │
-                    └──────────┬───────────┘
-                               │
-                    ┌──────────┴───────────┐
-                    ▼                      ▼
-             GitHub Pages            Container Registry
-             Deployment              Docker Image
+
+                            ┌──────────────────────┐
+                            │    GitHub Repository │
+                            │  Source & Workflows  │
+                            └──────────┬───────────┘
+                                       │
+                                       │ git push (main)
+                                       ▼
+                            ┌──────────────────────┐
+                            │    GitHub Actions    │
+                            │  1. Secret Scan      │
+                            │  2. Vulnerability    │
+                            │  3. Static Build     │
+                            │  4. Artifact Stage   │
+                            └──────────┬───────────┘
+                                       │
+                    ┌──────────────────┴──────────────────┐
+                    ▼                                     ▼
+         ┌─────────────────────┐               ┌─────────────────────┐
+         │ GitHub Pages Deploy │               │ Docker Container    │
+         │ Live Web Hosting    │               │ Registry / Hosting  │
+         └──────────┬──────────┘               └─────────────────────┘
                     │
                     ▼
-             🌐 Portfolio
-
+        🌐 Public Live Portfolio
 
 ---
 
@@ -79,289 +71,64 @@ https://amit5197.github.io/portfolio/
 
 ---
 
-# 🛠️ Technologies Used
+## 🛠️ Tech Stack & Tooling
 
+### Frontend & UI
+* **Core**: HTML5, CSS3, JavaScript (ES6+)
+* **Styling**: Modern CSS Custom Properties, Glassmorphism UI, Ambient Gradients
+* **Animations**: Native CSS Transitions, Canvas Particles, Custom Keyframes
+* **Icons**: Font Awesome 6.5
 
-## Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-- Responsive Design
-- AOS Animation
-- Particles.js
-
-
-## DevOps Skills Highlighted
-
-- Linux Administration
-- Git & GitHub
-- Docker
-- Kubernetes
-- Jenkins
-- GitHub Actions
-- Terraform
-- Ansible
-- AWS Cloud
-- CI/CD Pipelines
-- Monitoring
-
+### DevOps, Security & Cloud Stack
+* **Cloud**: AWS (EC2, S3, VPC, Route 53, IAM, ALB/NLB), Microsoft Azure, OCI
+* **Containers & Orchestration**: Docker, Docker Compose, Kubernetes, Helm
+* **Infrastructure as Code (IaC)**: Terraform, Ansible
+* **CI/CD & Security**: GitHub Actions, Jenkins, Gitleaks, Trivy SAST
+* **Monitoring & Observability**: Prometheus, Grafana, AWS CloudWatch, ELK Stack
+* **OS & Scripting**: Linux System Administration, Bash Scripting, Cron Automation
 
 ---
 
-# 📂 Project Structure
-
+## 📂 Project Structure
 
 ```
 portfolio/
-
-│── index.html
-
-│
-
+├── index.html              # Main HTML markup containing all sections
 ├── css/
-
-│   ├── style.css
-
-│   ├── animations.css
-
-│   └── responsive.css
-
-
+│   └── style.css           # Modern unified stylesheet (Variables, Glassmorphism, Responsive)
 ├── js/
-
-│   ├── app.js
-
-│   ├── particles.js
-
-│   ├── cursor.js
-
-│   ├── animations.js
-
-│   └── chatbot.js
-
-
-├── assets/
-
-│   ├── images/
-
-│   └── icons/
-
-
-├── README.md
-
-└── LICENSE
-
+│   ├── app.js              # Main core app engine, smooth scrolling, header states
+│   ├── animation.js        # Intersection Observer, scroll reveal, menu controls
+│   └── chatbot.js          # Interactive AI DevOps assistant chatbot logic
+├── resume.pdf              # Resume downloadable asset
+├── .github/
+│   └── workflows/
+│       └── deploy.yml      # DevSecOps CI/CD workflow (Gitleaks, Trivy, Pages Deploy)
+├── README.md               # Repository documentation
+└── LICENSE                 # Open-source MIT license
 ```
-
 
 ---
 
-# ✨ Features
+## ✨ Features
 
-
-## 🎨 Modern UI
-
-- Dark DevOps theme
-- Neon terminal style
-- Responsive design
-- Animated components
-
-
-## ⚙️ Interactive Features
-
-- Particle network background
-- Custom cursor animation
-- Scroll animations
-- AI chatbot assistant
-- Smooth navigation
-
-
-## ☁️ DevOps Sections
-
-Portfolio contains:
-
-- About Me
-- DevOps Skills
-- Cloud Projects
-- Automation Experience
-- Contact Information
-
+- **DevOps Terminal Aesthetic**: Dark mode primary theme complete with responsive interactive terminal windows and status indicators.
+- **Interactive AI Portfolio Chatbot**: Built-in assistant capable of answering questions about Docker, Kubernetes, AWS, CI/CD, and professional experience.
+- **Automated DevSecOps Pipeline**: Integrated GitHub Actions pipeline equipped with secret scanning (Gitleaks) and security vulnerability auditing (Trivy).
+- **Responsive & Accessible**: Fully optimized across desktop, tablet, and mobile viewports with accessibility considerations for reduced motion.
 
 ---
 
-# 🚀 Running Locally
+## 👨‍💻 Author & Contact
 
+## Amit K Pandey
 
-Clone repository:
+## DevOps & Cloud Engineer
 
+LinkedIn: linkedin.com/in/amitpandey511997
 
-```bash
-git clone https://github.com/YOUR_USERNAME/devops-portfolio.git
-```
+GitHub: github.com/Amit5197
 
-
-Go inside project:
-
-
-```bash
-cd devops-portfolio
-```
-
-
-Run:
-
-
-```bash
-open index.html
-```
-
-
-or use VS Code Live Server.
-
-
----
-
-# 🐳 Docker Deployment
-
-
-Create Docker image:
-
-
-```bash
-docker build -t devops-portfolio .
-```
-
-
-Run container:
-
-
-```bash
-docker run -p 8080:80 devops-portfolio
-```
-
-
-Access:
-
-
-```
-http://localhost:8080
-```
-
-
----
-
-# 🔄 CI/CD Pipeline Example
-
-
-Workflow:
-
-
-```
-Developer Push
-
-        |
-
-        ↓
-
-GitHub Repository
-
-        |
-
-        ↓
-
-GitHub Actions
-
-        |
-
-        ↓
-
-Docker Build
-
-        |
-
-        ↓
-
-Docker Image
-
-        |
-
-        ↓
-
-Cloud Deployment
-
-```
-
-
----
-
-# ☁️ Cloud Deployment
-
-
-Supported platforms:
-
-
-- AWS S3 + CloudFront
-- AWS EC2
-- Netlify
-- GitHub Pages
-- Docker Hosting
-
-
----
-
-# 📸 Screenshots
-
-
-Add screenshots here:
-
-
-```
-assets/images/screenshots/
-```
-
-
----
-
-# 📈 Future Improvements
-
-
-- Kubernetes deployment
-- Terraform infrastructure
-- AWS monitoring dashboard
-- Real AI chatbot API
-- Blog section
-- CI/CD live pipeline
-
-
----
-
-# 👨‍💻 Author
-
-
-**Your Name**
-
-DevOps Engineer
-
-
-Skills:
-
-```
-AWS
-Docker
-Kubernetes
-Terraform
-Jenkins
-Linux
-Python
-Cloud Automation
-```
-
-
----
-
-# 📜 License
-
-
+## 📜 License
 This project is licensed under the MIT License.
 
