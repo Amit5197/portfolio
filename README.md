@@ -18,6 +18,38 @@ This is my personal **DevOps Engineer Portfolio Website** built to showcase:
 - Infrastructure as Code
 - Monitoring and automation skills
 
+Next.js → Git → GitHub → GitHub Actions → quality/security checks → Docker → deployment → monitoring → documentation
+
+---
+
+ ### 🏗️ Target Architecture
+
+                    ┌──────────────────────┐
+                    │       GitHub         │
+                    │   Source Repository  │
+                    └──────────┬───────────┘
+                               │
+                               │ git push
+                               ▼
+                    ┌──────────────────────┐
+                    │    GitHub Actions    │
+                    │                      │
+                    │  1. Lint             │
+                    │  2. Test             │
+                    │  3. Build            │
+                    │  4. Security Scan    │
+                    │  5. Docker Build     │
+                    └──────────┬───────────┘
+                               │
+                    ┌──────────┴───────────┐
+                    ▼                      ▼
+             GitHub Pages            Container Registry
+             Deployment              Docker Image
+                    │
+                    ▼
+             🌐 Portfolio
+
+
 ---
 
 ## Portfolio Link->
