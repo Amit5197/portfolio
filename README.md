@@ -6,7 +6,28 @@
 ![Kubernetes](https://img.shields.io/badge/Orchestration-Kubernetes-326ce5)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
+# 🚀 Amit K Pandey - (Cloud & DevOps Engineer) Portfolio
 
+![DevOps](https://img.shields.io/badge/Role-DevOps%20%26%20Cloud%20Engineer-00d9ff?style=for-the-badge&logo=devops)
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Azure](https://img.shields.io/badge/Azure-0089D6?style=for-the-badge&logo=microsoft-azure&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-00d084?style=for-the-badge)
+
+---
+
+## 📌 Overview
+
+Production-ready, highly interactive **DevOps Engineer Portfolio** designed to highlight multi-cloud deployment (AWS/Azure), Infrastructure as Code (IaC), container orchestration, and DevSecOps pipelines. 
+
+- **Live Site**: [amit5197.github.io/portfolio](https://amit5197.github.io/portfolio/)
+- **Repository**: [github.com/Amit5197/portfolio](https://github.com/Amit5197/portfolio)
+
+---
+
+## 🏗️ Target CI/CD & Deployment Architecture
 ## 📌 About This Project
 
 This is my personal **DevOps Engineer Portfolio Website** built to showcase:
